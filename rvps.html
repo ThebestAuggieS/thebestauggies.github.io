@@ -8,7 +8,7 @@
 			div {
 				border: 1px solid black;
 				height: 400px;
-				float: left; 
+				float: left;
 			}
 
 			#player, #computer {
@@ -20,7 +20,7 @@
 
 			}
 			#options img {
-				width: 30%; 
+				width: 30%;
 			}
 
 			#player-image img, #computer-image img {
@@ -28,10 +28,10 @@
 			}
 			#vid{
 			width: 100%;
-			text-align: center;	
+			text-align: center;
 			}
 
-		</style> 		
+		</style>
 
 		<script type="text/javascript">
 
@@ -47,12 +47,12 @@
 
 			// 1 it rock, 2 is Paper, 3 is scissors
 			update = function(pNum) {
-  	 			
+
 				// generate a random number between 1-3
 				randomNmber = Math.floor( ( Math.random() * 3 ) + 1);
 				round++;
-				
-				
+
+
 				if (round == 3) {
 
 					if (pScore > cScore) {
@@ -68,7 +68,7 @@
 
 					}
 
-					
+
 				}
 
 				// reset
@@ -78,7 +78,7 @@
 					cScore =0;
 					document.getElementById('winner').innerHTML = " ";
 				}
-				
+
 
 				// if num is 1 them return rock
 				if (pNum == 1){
@@ -154,7 +154,7 @@
 
 
 				if (scoreText =="player Wins" && pNum ==2) {
-					 document.getElementById('vid').innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MZxtgUoGzMQ\" frameborder=\"0\" allowfullscreen></iframe>"
+					 document.getElementById('vid').innerHTML ="<iframe width=\"560\"=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vigQJ9WzIs4\" frameborder=\"0\" allowfullscreen></iframe>"
 
 				};
 
@@ -164,7 +164,7 @@
 
 					};
 				// output rockdoc
-				
+
 			    document.getElementById('computer-image').innerHTML = '<img src="img/' +computerImage+ '" >'; // this will upd
 		        document.getElementById('scoreText').innerHTML = scoreText;
 		        document.getElementById('player-image').innerHTML = '<img src="img/' +playerImage+ '" >'; // this will upd
@@ -198,7 +198,7 @@
 		<h3>Player Score: <span id="pScore"></span></h3>
 		<h3 >computer Score: <span id="cScore"></span></h3>
 		<h3 id="winner"></h3>
-		
+
         <p id="options">
 		<!-- for the pressing-->
 			<a href="#" Onclick="update(1);"><img src="img/rock.jpg"></a>
@@ -209,7 +209,7 @@
 
 		</p>
 
-	</div>	
+	</div>
 
 	<!-- computer's box -->
 	<div id="computer">
@@ -222,4 +222,3 @@
 </html>
 
 <!-- -->
-
